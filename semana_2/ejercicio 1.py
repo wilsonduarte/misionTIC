@@ -1,5 +1,6 @@
-def saludo()
-    input("Ingrese su nombre")
-    print("¡Hola, ", saludo())
+def saludo(nombre):
+    print("¡Hola, ", nombre,"!")
+   
 
-saludo()
+nombre = input("Ingrese su nombre: ")
+saludo(nombre)
