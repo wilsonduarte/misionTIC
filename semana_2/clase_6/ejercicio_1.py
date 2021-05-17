@@ -15,5 +15,3 @@ nota = float(input("Ingrese la nota definitiva: "))
 print(mensaje_nota(nota))
 
 
-#ejercicio 2
-
