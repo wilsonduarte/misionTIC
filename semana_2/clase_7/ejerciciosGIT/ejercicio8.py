@@ -7,15 +7,19 @@ def triangulos():
     x = 1 
     base = 0
     altura = 0
+    triangulos_mayores = 0
     resultados = []
     n=int(input("¿Cuantos triángulos ingresará?: "))
     while x <= n:
         base = int(input("ingrese la medida de la base: "))
         altura = int(input("ingrese la altura del triángulo: "))
         superficie = (base * altura) / 2
+        if superficie > 12 :
+            triangulos_mayores += 1
         resultado = "Triangulo # " + str(x) +  ": Base: " + str(base) + ", Altura: " + str(altura) + ", superficie: " + str(superficie)
         resultados.append(resultado)
         x = x + 1
+    print("La cantidad de superficies mayores a 12 es: ", triangulos_mayores)
     return resultados
 
 
